@@ -1,0 +1,7 @@
+export const LANDING = '/'
+export const LOGIN = '/login'
+export const SIGNUP = '/signup'
+export const FORGOTPW = '/pw-reset'
+export const ADMIN = '/admin'
+export const HOME = '/home'
+export const ACCOUNT = '/account'

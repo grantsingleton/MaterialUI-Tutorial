@@ -12,14 +12,14 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Exercises() {
+export default function Exercises(props) {
 
   const classes = useStyles();
 
   return (
     <Grid container spacing={2}>
       <Grid item sm>
-        <LeftPane classes={classes}/>
+        <LeftPane classes={classes} exercises={props.exercises}/>
       </Grid>
       <Grid item sm>
         <RightPane classes={classes}/>

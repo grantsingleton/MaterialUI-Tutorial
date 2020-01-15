@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Footer() {
+export default function Footer( {muscles} ) {
 
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -28,9 +28,10 @@ export default function Footer() {
         textColor="primary"
         centered
       >
-        <Tab label="Item One" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
+        <Tab label="All"/>
+        {muscles.map(group => 
+          <Tab label={group} />
+          )}
       </Tabs>
     </Paper>
   );
