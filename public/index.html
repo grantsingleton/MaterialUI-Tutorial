@@ -39,14 +39,30 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/7.6.2/firebase-app.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/7.6.2/firebase-analytics.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
 
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD8EpjVxIAHfoqhAUcYlWQMbgyhGTCfwLs",
+    authDomain: "materialui-60490.firebaseapp.com",
+    databaseURL: "https://materialui-60490.firebaseio.com",
+    projectId: "materialui-60490",
+    storageBucket: "materialui-60490.appspot.com",
+    messagingSenderId: "480877747326",
+    appId: "1:480877747326:web:8016259a03fe7914c88c2f",
+    measurementId: "G-EE1QMQ0J24"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 
 </html>
