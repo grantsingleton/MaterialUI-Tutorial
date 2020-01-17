@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import {Header, Footer, LoginPage, LandingPage, SignUpPage, InputField} from './Layouts'
+import {Header, Footer, LoginPage, LandingPage, SignUpPage} from './Layouts'
 import {Exercises} from './Exercises'
 import {muscles, exercises} from '../store.js'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
@@ -38,7 +38,6 @@ export default class extends Component {
             <Route path={ROUTES.SIGNUP} component={SignUpPage} />
           </Fragment>
         </Router>
-        <InputField />
       </Fragment>
     );
   }

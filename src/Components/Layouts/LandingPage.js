@@ -1,8 +1,9 @@
 import React from 'react'
+import InputField from './InputField'
 
-export default function LandingPage() {
+export default function LandingPage(docRef) {
 
   return (
-    <h1>Landing Page</h1>
+    <InputField  />
   )
 }
